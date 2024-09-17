@@ -193,12 +193,16 @@ leds:
 30.  mul r0, r1: Multiplica los valores en r0 y r1 y guarda el resultado en r0.
 31.  str r0, [r6], #4: Almacena el resultado en la dirección apuntada por r6 y luego incrementa r6 en 4.
 32.  “b loop_mult”: Repite el ciclo de multiplicación hasta que encuentre un 0 en alguno de los vectores.
-## Ejercicio 5:
-## Ejercicio 6:
 
 # Actividad 2:
-La actividad del semaforo esta agregada como carpeta al repositorio
+La actividad del semaforo esta agregada como carpeta al repositorio con el nombre de "Semaforo".
 
+# Actividad matriz de leds:
+
+## Maquina de estados:
+![alt text](image.png)
+## Pines:
+![alt text](image-1.png)
 
 
 
