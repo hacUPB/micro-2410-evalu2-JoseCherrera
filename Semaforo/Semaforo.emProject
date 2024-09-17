@@ -1,0 +1,71 @@
+<!DOCTYPE CrossStudio_Project_File>
+<solution Name="Semaforo" version="2" target="8">
+  <configuration
+    Name="Debug"
+    c_preprocessor_definitions="DEBUG"
+    gcc_debugging_level="Level 3"
+    gcc_omit_frame_pointer="Yes"
+    gcc_optimization_level="None" />
+  <configuration
+    Name="Release"
+    c_preprocessor_definitions="NDEBUG"
+    gcc_debugging_level="Level 2"
+    gcc_omit_frame_pointer="Yes"
+    gcc_optimization_level="Level 2 balanced" />
+  <project Name="Semaforo">
+    <configuration
+      LIBRARY_IO_TYPE="RTT"
+      Name="Common"
+      Target="MKE18F512VLL16"
+      arm_architecture="v7EM"
+      arm_compiler_variant="SEGGER"
+      arm_core_type="Cortex-M4"
+      arm_endian="Little"
+      arm_fp_abi="Hard"
+      arm_fpu_type="FPv4-SP-D16"
+      arm_linker_heap_size="0"
+      arm_linker_process_stack_size="0"
+      arm_linker_stack_size="2048"
+      arm_linker_variant="SEGGER"
+      arm_simulator_memory_simulation_parameter="ROM;0x00000000;0x080000;ROM;0x10000000;0x010000;RAM;0x14000000;0x1000;RAM;0x1fff8000;0x8000;RAM;0x20000000;0x8000"
+      arm_target_device_name="MKE18F512xxx16"
+      arm_target_interface_type="SWD"
+      c_preprocessor_definitions="ARM_MATH_CM4;CPU_MKE18F512VLL16;__MKE18F16_FAMILY"
+      c_user_include_directories="$(ProjectDir)/CMSIS_5/CMSIS/Core/Include;$(ProjectDir)/MKE18F16/Device/Include"
+      debug_initial_breakpoint="_start"
+      debug_register_definition_file="$(ProjectDir)/MKE18F16_Registers.xml"
+      debug_stack_pointer_start="__stack_end__"
+      debug_start_from_entry_point_symbol="Yes"
+      debug_startup_completion_point="_start"
+      debug_target_connection="J-Link"
+      gcc_entry_point="Reset_Handler"
+      link_include_standard_libraries="No"
+      link_linker_script_file="$(ProjectDir)/MKE18F16_Flash.icf"
+      linker_memory_map_file="$(ProjectDir)/MKE18F512VLL16_MemoryMap.xml"
+      macros="DeviceHeaderFile=$(PackagesDir)/MKE18F16/Device/Include/MKE18F16.h;DeviceSystemFile=$(PackagesDir)/MKE18F16/Device/Source/system_MKE18F16.c;DeviceVectorsFile=$(PackagesDir)/MKE18F16/Source/MKE18F16_Vectors.s;DeviceFamily=MKE18F16;Target=MKE18F512VLL16"
+      project_directory=""
+      project_type="Executable"
+      target_reset_script="Reset();" />
+    <folder Name="Script Files">
+      <file file_name="MKE18F16/Scripts/MKE18F16_Target.js">
+        <configuration Name="Common" file_type="Reset Script" />
+      </file>
+    </folder>
+    <folder Name="Source Files">
+      <configuration Name="Common" filter="c;cpp;cxx;cc;h;s;asm;inc" />
+      <file file_name="definiciones.h" />
+      <file file_name="maquinas.s" />
+      <file file_name="start.s" />
+      <file file_name="systick_handler.s" />
+    </folder>
+    <folder Name="System Files">
+      <configuration
+        Name="Common"
+        c_preprocessor_definitions="__NO_SYSTEM_INIT" />
+      <file file_name="MKE18F16/Source/MKE18F16_Startup.s" />
+      <file file_name="MKE18F16/Source/MKE18F16_Vectors.s">
+        <configuration Name="Common" file_type="Assembly" />
+      </file>
+    </folder>
+  </project>
+</solution>
