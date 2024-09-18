@@ -200,9 +200,9 @@ La actividad del semaforo esta agregada como carpeta al repositorio con el nombr
 
 # Actividad matriz de leds:
 La actividad de la matriz de leds esta agregada como carperta al repositorio con el nombre de "Matriz".
-## Maquina de estados:
-![alt text](image.png)
 ## Pines:
+![alt text](image.png)
+## Maquina de estados:
 ![alt text](image-1.png)
  
 
