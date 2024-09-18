@@ -193,16 +193,17 @@ leds:
 30.  mul r0, r1: Multiplica los valores en r0 y r1 y guarda el resultado en r0.
 31.  str r0, [r6], #4: Almacena el resultado en la dirección apuntada por r6 y luego incrementa r6 en 4.
 32.  “b loop_mult”: Repite el ciclo de multiplicación hasta que encuentre un 0 en alguno de los vectores.
-
+## Ejercicio 5 y 6:
+Para este ejercicio el codigo y funcionamiento fue utilizado como esqueleto para la creacion de la matriz de leds, puedes vericarlo en la capeta llamada "Matriz" lo cual es una combinacion  del codigo de semaforo y el codigo de prender un led de la matriz solo que mas complejo y prediendo todos los leds.
 # Actividad 2:
 La actividad del semaforo esta agregada como carpeta al repositorio con el nombre de "Semaforo".
 
 # Actividad matriz de leds:
-
+La actividad de la matriz de leds esta agregada como carperta al repositorio con el nombre de "Matriz".
 ## Maquina de estados:
 ![alt text](image.png)
 ## Pines:
 ![alt text](image-1.png)
-
+ 
 
 
